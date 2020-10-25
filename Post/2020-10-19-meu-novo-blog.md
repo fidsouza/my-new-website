@@ -5,7 +5,6 @@
     category : DIVERS
     background : "#ff5555"
 ---
-# Como eu fiz meu novo blog com Gatsby e Netlify CMS ? 
 
 Confesso que sempre quiz ter um blog, onde eu simplesmente pudesse armazenar conteúdos
 que venho aprendendo na internet ou simplesmente postar o que eu quero , pensei no
