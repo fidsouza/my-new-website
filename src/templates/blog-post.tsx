@@ -1,6 +1,10 @@
 import React from 'react'
 import {  graphql } from 'gatsby'
 
+import Layout from "../components/Layout"
+import SEO from "../components/seo"
+
+
 interface QueryPost{
    data:{ markdownRemark:{
         id:string,
@@ -17,10 +21,11 @@ const BlogPost = (query:QueryPost) => {
     const post = query.data.markdownRemark
 
     return (
-        <>
+        <Layout>
+          <SEO title={post.frontmatter.title}/>
             <h1>{post.frontmatter.title}</h1>
             <div dangerouslySetInnerHTML={{__html:post.html}}></div>
-        </>
+        </Layout>
     )
 }
 
