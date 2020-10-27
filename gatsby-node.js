@@ -47,23 +47,39 @@ exports.createPages = ({ graphql, actions }) => {
             slug
           }
         }
+        next {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
+        previous {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
       }
     }
-  }
-  
-  `, { limit: 1000 }).then(result => {
+  }`, { limit: 1000 }).then(result => {
     if (result.errors) {
       throw result.errors
     }
     const posts = result.data.allMarkdownRemark.edges
     // Create blog post pages.
-    posts.forEach(({node}) => {
+    posts.forEach(({node,next , previous}) => {
       createPage({
         // Path for this page — required
         path: node.fields.slug,
         component: blogPostTemplate,
         context: {
-            slug:node.fields.slug
+            slug:node.fields.slug,
+            previousPost : next,
+            nextPost : previous 
         },
       })
     })
