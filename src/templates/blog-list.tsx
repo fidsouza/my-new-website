@@ -1,5 +1,5 @@
 import React, { Props } from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from "../components/Layout"
 import PostItem from "../components/PostItem"

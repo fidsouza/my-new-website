@@ -6,6 +6,19 @@
     background : "#ff5555"
 ---
 
+````
+import React from 'react'
+
+Const Index = () => (
+    return <h1>Hello World</h1>
+)
+
+export default Indexnpm install gatsby-transformer-remark gatsby-remark-prismjs prismjs
+
+
+````
+
+
 Confesso que sempre quiz ter um blog, onde eu simplesmente pudesse armazenar conteúdos
 que venho aprendendo na internet ou simplesmente postar o que eu quero , pensei no
 inicio utilizar o Medium , mais seria muito fácil! Afinal e só criar uma conta e pronto
@@ -30,6 +43,7 @@ o que facilita muito o SEO.
 
 o Gatsby possui mais de 2000 plugins e dentre eles o que mais gostei foi o Gatsby-image 
 esse plugin e realmente sensacional ele torna a manipulação das imagens algo fácil e prático. 
+![Cachorro zoeiro](/assets/img/cachorro.jpeg)
 
 eu recomendo que você veja a documentação (Que por sinal e excelente) para
 você ter uma ideia do que é possível [fazer com o gatsby!](https://www.gatsbyjs.com/docs/)
