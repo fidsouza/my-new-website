@@ -1,7 +1,7 @@
 const links = [
     {
         Label:'Sobre mim',
-        url :'/'
+        url :'/sobre'
     },
     {
         Label:'Open Source',

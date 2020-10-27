@@ -63,6 +63,16 @@ img{
     height:auto;
 }
 
+
+  body {
+    --borders: #44475a;
+    --texts: #d2d2d2;
+    --highlight: #1fa1f2;
+	  --background: linear-gradient(49deg, rgba(60,30,87,1) 20%, rgba(121,21,180,1) 100%);
+    --white: #fff;
+    --black: --black;
+  }
+
 `
 
 export default GlobalStyles
