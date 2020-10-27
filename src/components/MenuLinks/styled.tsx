@@ -21,12 +21,12 @@ export const MenuLinksItem = styled.li`
 `
 
 export const MenuLinksLink = styled(Link)`
-    color: #f8f8f2;
+    color: var(--texts);
     text-decoration:none;
     transition:color 0.5s;
 
     &:hover {
-        color:#f1fa8c
+        color:var(--hover)
     }
 
 `

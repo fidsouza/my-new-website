@@ -6,7 +6,7 @@ interface ITagBackground {
 }
 
 export const PostItemLink =  styled(Link)`
-    color:#f8f8f2;
+    color:var(--posts);
     display:flex;
     text-decoration:none;
     transition: color 0.5s;

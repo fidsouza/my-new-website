@@ -16,7 +16,7 @@ export const SocialLinksItem = styled.li`
 `
 
 export const SocialLinksLink = styled.a`
-    color:#f8f8f2;
+    color:var(--texts);
     text-decoration:none;
     transition:color 0.5s;
     &:hover {
