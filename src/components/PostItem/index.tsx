@@ -6,7 +6,7 @@ interface Props {
       slug:string,
       category:string,
       date:string,
-      timeToRead:string,
+      timeToRead?:string,
       description:string,
       title:string
       background?:string
