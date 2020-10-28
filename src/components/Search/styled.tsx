@@ -19,19 +19,19 @@ export const SearchWrapper = styled.section`
     padding-top: 6rem;
   }
   .ais-Stats {
-    color: #8899a6;
+    color: var(--texts);
   }
   .ais-SearchBox-input {
     background: none;
     border: none;
     border-bottom: 1px solid #38444d;
-    color: #8899a6;
+    color: var(--texts);
     display: flex;
     font-size: 1.6rem;
     padding: 0.5rem;
     width: 100%;
     &::placeholder {
-      color: #8899a6;
+      color: var(--texts);
 
     }
     :focus::-webkit-input-placeholder {
@@ -39,7 +39,7 @@ export const SearchWrapper = styled.section`
        transform: translate(70%);
        -webkit-transition: all 0.35s ease-in-out;
        transition: all 0.45s ease-in-out;
-       color:#FFF;
+       color:var(--white);
     }
 
 

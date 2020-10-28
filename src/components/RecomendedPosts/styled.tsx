@@ -11,7 +11,7 @@ export const RecommendedWrapper = styled.section`
 export const RecommendedLink = styled(Link)`
   align-items: center;
   background: #192734;
-  color: #1fa1f2;
+  color: --highlight;
   display: flex;
   padding: 3rem;
   text-decoration: none;

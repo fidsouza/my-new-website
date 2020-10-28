@@ -31,7 +31,7 @@ const Profile = () => {
                                                         `)
     return (<S.ProfileWrapper>
                 <Avatar/>
-                <S.ProfileLink>
+                <S.ProfileLink to="/">
                   <S.ProfileAuthor>
                     {data.site.siteMetadata.title}
                     <S.ProfilePosition>

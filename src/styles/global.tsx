@@ -63,6 +63,31 @@ img{
     height:auto;
 }
 
+
+  body.dark {
+    --borders: #44475a;
+    --texts: #fff;
+    --posts:#fff;
+    --highlight: #1fa1f2;
+	  --background: linear-gradient(49deg, rgba(60,30,87,1) 20%, rgba(121,21,180,1) 100%);
+    --white: #fff;
+    --black: #000;
+    --active:rgb(255,229,54);
+    --hover:rgb(255,229,54);
+  }
+
+  body {
+    --borders: #dedede;
+    --posts:#000;
+    --texts: #000;
+    --highlight: #1fa1f2;
+	  --background: #fff;
+    --white: #fff;
+    --black: #000;
+    --active:#1fa1f2;
+    --hover:#91e117;
+  }
+
 `
 
 export default GlobalStyles
