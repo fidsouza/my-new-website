@@ -65,6 +65,7 @@ img{
 
 
   body.dark {
+
     --borders: #44475a;
     --texts: #fff;
     --posts:#fff;
@@ -76,7 +77,8 @@ img{
     --hover:rgb(255,229,54);
   }
 
-  body {
+  body.light {
+    
     --borders: #dedede;
     --posts:#000;
     --texts: #000;
@@ -86,6 +88,7 @@ img{
     --black: #000;
     --active:#1fa1f2;
     --hover:#91e117;
+
   }
 
 `
