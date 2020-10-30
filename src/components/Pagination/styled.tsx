@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import media from "styled-media-query"
+
 
 export const PaginationWrapper = styled.section`
 
@@ -9,6 +11,11 @@ export const PaginationWrapper = styled.section`
     padding:1.5rem 3rem;
     justify-content: space-between;
     color:var(--white);
+
+    ${media.lessThan("large")`
+    font-size: .8rem;
+    padding: 1rem;
+  `}
 
     a { 
         color:#f1fa8c;
