@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import media from "styled-media-query"
+
 import {Link} from 'gatsby'
 
 interface ITagBackground {
@@ -14,6 +16,7 @@ export const PostItemLink =  styled(Link)`
     &:hover{
         color:#1ea9e1;
     }
+
 `
 
 export const PostItemWrapper = styled.section `
@@ -23,6 +26,13 @@ export const PostItemWrapper = styled.section `
     display:flex;
     padding:2rem 3rem;
     width:100%;
+
+    ${media.lessThan("large")`
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin-top:2rem;
+  `}
 
 `
 
@@ -40,6 +50,15 @@ export const PostItemTag= styled.div<ITagBackground>`
     min-width:90px;
     text-transform:uppercase;
 
+    ${media.lessThan("large")`
+    border-radius: 0;
+    font-size: 1rem;
+    min-height: auto;
+    min-width: auto;
+    padding: .2rem .5rem;
+    margin-bottom: .7rem;
+  `}
+
 `
 
 export const PostItemInfo = styled.div`
@@ -47,6 +66,10 @@ export const PostItemInfo = styled.div`
     display:flex;
     flex-direction:column;
     margin-left:1.5rem;
+
+    ${media.lessThan("large")`
+    margin: 0;
+  `}
 
 `
 
@@ -62,6 +85,8 @@ export const PostItemTitle = styled.h1 `
     font-weight:700;
     margin:0.2rem 0 0.5rem;
 
+
+
 `
 
 export const PostItemDescription = styled.p`
@@ -69,6 +94,8 @@ export const PostItemDescription = styled.p`
     font-size:1.2rem;
     font-weight:300;
     line-height:1.2;
+
+
 
 `
 

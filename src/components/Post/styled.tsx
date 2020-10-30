@@ -1,10 +1,17 @@
 import styled from "styled-components"
+import media from 'styled-media-query'
 
 export const PostHeader = styled.header`
   color: var(--texts);
   margin: auto;
   max-width: 70rem;
   padding: 5rem 5rem 0;
+
+  ${media.lessThan("large")`
+  
+  padding:0.8rem;
+
+`}
 `
 
 export const PostTitle = styled.h1`
@@ -12,6 +19,12 @@ export const PostTitle = styled.h1`
   font-weight: 700;
   padding: 0 1.4rem;
   margin: 1rem auto;
+  
+  ${media.lessThan("large")`
+  
+  font-size:2.2rem;
+`}
+
 `
 
 export const PostDescription = styled.h2`
@@ -19,6 +32,10 @@ export const PostDescription = styled.h2`
   font-style:italic;
   font-weight: 200;
   padding: 0 1.4rem;
+
+  ${media.lessThan("large")`
+  font-size:1.75rem;
+`}
 `
 
 export const PostDate = styled.p`
@@ -28,6 +45,8 @@ export const PostDate = styled.p`
 `
 
 export const MainContent = styled.section`
+ 
+
   margin: auto;
   max-width: 70rem;
   padding: 2rem 5rem;
@@ -77,7 +96,6 @@ export const MainContent = styled.section`
     }
   }
   img {
-    display: block;
     max-width: 100%;
     margin: 1.875rem auto;
    
@@ -161,4 +179,11 @@ export const MainContent = styled.section`
       opacity: 0.8;
     }
   }
+
+  ${media.lessThan("large")`
+  
+    padding:0.8rem;
+
+  
+  `}
 `
