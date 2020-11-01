@@ -1,5 +1,8 @@
 import React from 'react'
 
+import getThemeColor from "../../utils/getThemeColor"
+
+
 import * as S from './styled'
 
 interface Props { 
@@ -15,7 +18,7 @@ interface Props {
 
 const PostItem = ({slug,category,date,timeToRead,title,description,background}:Props) => (
 
-    <S.PostItemLink to={slug}>
+    <S.PostItemLink to={slug} cover direction="right" bg={getThemeColor()}duration={0.5} >
         <S.PostItemWrapper>
             <S.PostItemTag background={background}>{category}</S.PostItemTag>
             <S.PostItemInfo>

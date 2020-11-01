@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import media from "styled-media-query"
 
-import {Link} from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 interface ITagBackground {
     background?: string;
 }
 
-export const PostItemLink =  styled(Link)`
+export const PostItemLink =  styled(AniLink)`
     color:var(--posts);
     display:flex;
     text-decoration:none;

@@ -25,11 +25,11 @@ interface INextPrevious{
 const RecommendedPosts = ({nextPost,previousPost}:INextPrevious) => (
   <S.RecommendedWrapper>
       {previousPost && (
-          <S.RecommendedLink to={previousPost.fields.slug} className="previous">{previousPost.frontmatter.title}</S.RecommendedLink>
+          <S.RecommendedLink to={previousPost.fields.slug} cover direction="left" bg="#fff" duration={0.5} className="previous">{previousPost.frontmatter.title}</S.RecommendedLink>
       )}
 
       {nextPost && (
-          <S.RecommendedLink to={nextPost.fields.slug} className="next">{nextPost.frontmatter.title}</S.RecommendedLink>
+          <S.RecommendedLink to={nextPost.fields.slug} cover direction="right" bg="#fff" duration={0.5} className="next">{nextPost.frontmatter.title}</S.RecommendedLink>
       )}
   </S.RecommendedWrapper>
 )

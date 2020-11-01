@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import { Link, GatsbyLinkProps } from 'gatsby'
-import { Props } from 'react'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 
 
 export const ProfileWrapper = styled.section`
@@ -12,7 +12,7 @@ export const ProfileWrapper = styled.section`
 
 `
 
-export const ProfileLink = styled(Link)`
+export const ProfileLink = styled(AniLink)`
 
 color : #91e117;
 text-decoration:none;
