@@ -18,6 +18,9 @@ interface QueryPostList {
                   description: string,
                   category: string,
                   background: string
+                  image:{
+                    absolutePath:string
+                  }
            }
            timeToRead:string,
            fields: {
@@ -44,7 +47,7 @@ const BlogList = (query:QueryPostList) => {
     
     return (
         <Layout>
-                  <SEO title="Home" />
+                  <SEO title="Home" description="Aprenda programação sem atalhos apenas com HardWork"/>
                  {postlist.map((item)=> (
                   <PostItem
                       slug={item.node.fields.slug}
@@ -83,6 +86,9 @@ export const QueryPostList = graphql`
                 description
                 category
                 background
+                image {
+                  absolutePath
+                }    
               }
               timeToRead
               fields {

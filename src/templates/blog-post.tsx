@@ -19,6 +19,9 @@ interface QueryPost{
             title:string,
             description:string,
             date:string
+            image:{
+              absolutePath:string
+            }
 
         }
         html:string,
@@ -52,7 +55,7 @@ const BlogPost = (query:QueryPost) => {
 
     return (
         <Layout>
-          <SEO title={post.frontmatter.title}/>
+          <SEO title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.image.absolutePath}/>
           <S.PostHeader>
             <S.PostDate>
               {post.frontmatter.date} - {post.timeToRead} min de leitura
@@ -84,6 +87,9 @@ export const QueryPost =  graphql`query QueryPost($slug:String!) {
           title
           description
           date(locale: "pt-br",formatString:"DD [de] MMMM [de] YYYY")
+          image {
+            absolutePath
+          }
         }
         html
         timeToRead 

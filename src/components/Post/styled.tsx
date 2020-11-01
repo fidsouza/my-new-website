@@ -9,7 +9,7 @@ export const PostHeader = styled.header`
 
   ${media.lessThan("large")`
   
-  padding:0.8rem;
+  padding:2.85rem 0 0 0;
 
 `}
 `
@@ -22,7 +22,7 @@ export const PostTitle = styled.h1`
   
   ${media.lessThan("large")`
   
-  font-size:2.2rem;
+  font-size:2.0rem;
 `}
 
 `
@@ -34,7 +34,7 @@ export const PostDescription = styled.h2`
   padding: 0 1.4rem;
 
   ${media.lessThan("large")`
-  font-size:1.75rem;
+  font-size:1.45rem;
 `}
 `
 
@@ -168,8 +168,8 @@ export const MainContent = styled.section`
     margin: 1rem auto !important;
   }
   a {
-    border-bottom: 1px dashed --highlight;
-    color: --highlight;
+    border-bottom: 1px dashed var(--highlight);
+    color: var(--highlight);
     text-decoration: none;
     transition: opacity 0.5s;
     svg {
