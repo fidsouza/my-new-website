@@ -2,22 +2,24 @@ import styled from 'styled-components'
 
 export const SectionWrapper = styled.section`
 
-    align-items:center;
-    display:flex;
-    padding:2rem 3rem;
-    width:100%;
+  margin: auto;
+  max-width: 70rem;
+  padding: 2rem 5rem;
+
+
 `
 
 export const Text = styled.p`
 
-    font-size:2.5rem;
+    margin: 0 auto 1.6rem;
+    font-size:1.5rem;
     color:var(--texts);
-    line-height:4rem;
+    line-height:1.95rem;
 
 `
 
 export const Title = styled.h1`
-    font-size:3.5rem;
+    font-size:2.5rem;
     color:var(--texts);
     line-height:6.5rem;
 
