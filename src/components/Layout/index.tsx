@@ -1,7 +1,7 @@
-import * as React from "react"
+import * as React from "./node_modules/react"
 import Sidebar from '../Sidebar'
 import MenuBar from '../MenuBar'
-import {TransitionPortal} from 'gatsby-plugin-transition-link'
+import {TransitionPortal} from './node_modules/gatsby-plugin-transition-link'
 
 import * as S from  './styled'
 import GlobalStyes from '../../styles/global'
