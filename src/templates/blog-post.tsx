@@ -18,7 +18,7 @@ interface QueryPost{
         frontmatter:{
             title:string,
             description:string,
-            date:string
+            date:string,
             image:string
 
         }
