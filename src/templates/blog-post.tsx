@@ -19,9 +19,7 @@ interface QueryPost{
             title:string,
             description:string,
             date:string
-            image:{
-              absolutePath:string
-            }
+            image:string
 
         }
         html:string,
@@ -87,9 +85,7 @@ export const QueryPost =  graphql`query QueryPost($slug:String!) {
           title
           description
           date(locale: "pt-br",formatString:"DD [de] MMMM [de] YYYY")
-          image {
-            absolutePath
-          }
+          image
         }
         html
         timeToRead 
