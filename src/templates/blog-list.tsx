@@ -18,7 +18,7 @@ interface QueryPostList {
                   description: string,
                   category: string,
                   background: string
-                  image
+                  image:string
            }
            timeToRead:string,
            fields: {
