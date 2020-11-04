@@ -18,9 +18,7 @@ interface QueryPostList {
                   description: string,
                   category: string,
                   background: string
-                  image:{
-                    absolutePath:string
-                  }
+                  image
            }
            timeToRead:string,
            fields: {
@@ -86,9 +84,7 @@ export const QueryPostList = graphql`
                 description
                 category
                 background
-                image {
-                  absolutePath
-                }    
+                image 
               }
               timeToRead
               fields {
