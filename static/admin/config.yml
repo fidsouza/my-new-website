@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: fidsouza/my-new-website
+  repo: fidsouza/my-new-website/
   branch: main
   site_domain: https://filipedacosta.com
 
