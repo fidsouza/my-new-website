@@ -53,7 +53,7 @@ const BlogPost = (query:QueryPost) => {
 
     return (
         <Layout>
-          <SEO title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.image.absolutePath}/>
+          <SEO title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.image}/>
           <S.PostHeader>
             <S.PostDate>
               {post.frontmatter.date} - {post.timeToRead} min de leitura
