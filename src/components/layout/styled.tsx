@@ -1,5 +1,5 @@
-import styled from './node_modules/styled-components'
-import media from './node_modules/styled-media-query'
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 
 export const LayoutWrapper = styled.section`
