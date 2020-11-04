@@ -4,7 +4,7 @@
     description: Como eu fiz meu novo blog com Gatsby e Netlify CMS
     category : DIVERS
     background : "#ff5555"
-    image: "/assets/img/cachorro.jpeg"
+    image: "/assets/img/cachorro.jpg"
 ---
 
 ````

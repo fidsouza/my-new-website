@@ -1,13 +1,13 @@
 backend:
   name: github
-  repo: fidsouza/my-new-website/
+  repo: fidsouza/my-new-website
   branch: main
   site_domain: https://filipedacosta.com
 
 
 publish_mode: editorial_workflow
-media_folder: "static/assets/img"
-public_folder: "/assets/img"
+media_folder: "static/assets/img/"
+public_folder: "/assets/img/"
 
 collections:
   - name: "Post" # Used in routes, e.g., /admin/collections/blog
