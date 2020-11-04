@@ -1,0 +1,40 @@
+backend:
+  name: github
+  repo: fidsouza/my-new-website/
+  branch: main
+  site_domain: https://filipedacosta.com
+
+
+publish_mode: editorial_workflow
+media_folder: "static/assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "Post" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "Post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", format:'YYYY-MM-DD hh:mm:ss'}
+      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {
+         label: "Category",
+         name: "category",
+         widget: "select",
+         options: ["DIVER","JS","PHP","DB","CSS","HTML","DEV"]
+      }
+      - { label: "Background",
+          name: "background",
+          widget: "select",
+          options: [{label: "DIVER", value: "#A52A2A"},
+                    {label: "JS" , value : "#FFD700	"},
+                    {label: "PHP", value: "#4B0082"},
+                    {label: "DB", value: "#BDB76B"},
+                    {label: "CSS", value: "#3CB371"},
+                    {label: "HTML", value: "#00CED1"},
+                    {label: "DEV", value : "#6A5ACD"}]
+        }
+      - {label: "Body", name: "body", widget: "markdown"}
