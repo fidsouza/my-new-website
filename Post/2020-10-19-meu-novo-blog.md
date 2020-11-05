@@ -4,7 +4,7 @@
     description: Como eu fiz meu novo blog com Gatsby e Netlify CMS
     category : DIVERS
     background : "#ff5555"
-    image: "/assets/img/cachorro.jpeg"
+    image: "/assets/img/cachorro.jpg"
 ---
 
 ````
@@ -44,7 +44,7 @@ o que facilita muito o SEO.
 
 o Gatsby possui mais de 2000 plugins e dentre eles o que mais gostei foi o Gatsby-image 
 esse plugin e realmente sensacional ele torna a manipulação das imagens algo fácil e prático. 
-![Cachorro zoeiro](/assets/img/cachorro.jpeg)
+![Cachorro zoeiro](/assets/img/cachorro.jpg)
 
 eu recomendo que você veja a documentação (Que por sinal e excelente) para
 você ter uma ideia do que é possível [fazer com o gatsby!](https://www.gatsbyjs.com/docs/)
