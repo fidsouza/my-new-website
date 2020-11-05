@@ -4,13 +4,13 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid #38444d;
   border-top: 1px solid #38444d;
-  background: #192734;
+  background: var(--active);
   display: flex;
 `
 
 export const RecommendedLink = styled(AniLink)`
   align-items: center;
-  background: #192734;
+  background: var(--active);
   color: --highlight;
   display: flex;
   padding: 3rem;
@@ -18,7 +18,7 @@ export const RecommendedLink = styled(AniLink)`
   transition: background 0.5s;
   width: 50%;
   &:hover {
-    background: #38444d;
+    background: var(--hover);
   }
   &.previous {
     border-right: 1px solid #38444d;
