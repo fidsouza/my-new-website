@@ -13,10 +13,10 @@ const Comments = ({url,title}:Props) => {
         <S.CommentsWrapper>
             <S.CommentsTitle>Comentários</S.CommentsTitle>
             <ReactDisqusComments
-                shortname="filipedacosta-com."
+                shortname="filipedacosta-com"
                 identifier={url}
                 title={title}
-                url={url}/>
+                url="http://filipedacosta.com"/>
             </S.CommentsWrapper>
     )
 }
