@@ -1,7 +1,11 @@
 backend:
   name: github
   repo: fidsouza/my-new-website
+  branch: main
+  site_domain: filipedacosta.com
 
+af32d75859c03c0a1845
+1560a4f1d69a5ec2faca6f327818e9f2cad028f2
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img/"
