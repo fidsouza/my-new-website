@@ -10,17 +10,17 @@ background: "#3CB371"
 
 Recentemente ao começar um novo projeto com Nextjs + StyledComponents me deparei com um problema, o CSS simplesmente quebrava na pagina e todo estilo era perdido e a mensagem que eu recebia no console era a seguinte. 
 
-![](/assets/img/erro-nextjs-styled.png)
+![nextjs](/assets/img/erro-nextjs-styled.png)
 
-confesso que eu perdi algumas horas nessa brincadeira, mais , resolvi aqui postar o que eu fiz para corrigir e como foi fácil corrigir. 
+confesso que eu perdi algumas horas nessa brincadeira, mas , resolvi aqui postar o que eu fiz para corrigir e como foi fácil corrigir. 
 
 ## Por que ocorre esta mensagem ?
 
-por algum motivo o Babel que é o compilador do JavaScript não consegue fazer a compilação do arquivo JS com os Estilos e para corrigirmos isso e necessário um pequeno ajuste nas configurações do babel para que ele consiga fazer a importação correta do styled-components . 
+por algum motivo o Babel que é utilizado como compilador do JavaScript não consegue fazer a compilação do arquivo JS com os Estilos, e para corrigirmos isso e necessário um pequeno ajuste nas configurações do babel para que ele consiga fazer a importação correta do styled-components para babel.
 
 ## Como Corrigir ?
 
-Para corrigir basta você criar um arquivo .babelrc na raiz do seu projeto e incluir as seguintes configurações. 
+Para corrigir, basta você criar um arquivo `.babelrc na raiz do seu projeto e incluir as seguintes configurações. 
 
 ```
 {
