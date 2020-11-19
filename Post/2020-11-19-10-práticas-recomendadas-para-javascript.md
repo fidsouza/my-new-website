@@ -6,8 +6,6 @@ image: /assets/img/javascript.png
 category: JS
 background: "#FFD700\t"
 ---
-# As 10 melhores práticas de JavaScript recomendada pelos melhores desenvolvedores.
-
 ## Não use '==' para operadores.
 
 Em Javascript temos os operadores == e ===, o operador == e usado para comparar dois valores , mesmo que estes valores sejam de tipos diferentes , ja o === compara se os valores são do mesmo valor e tipo.
