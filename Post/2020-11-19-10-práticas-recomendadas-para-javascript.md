@@ -1,6 +1,6 @@
 ---
-title: 10 práticas recomendadas para JavaScript.
-description: As 10 práticas recomendas pelos melhores desenvolvedores
+title: 10 práticas recomendadas em JavaScript.
+description: As 10 práticas recomendas pelos melhores desenvolvedores de javascript
 date: 2020-11-19T00:10:25.871Z
 image: /assets/img/javascript.png
 category: JS
@@ -8,16 +8,16 @@ background: "#FFD700\t"
 ---
 ## Não use '==' para operadores.
 
-Em Javascript temos os operadores == e ===, o operador == e usado para comparar dois valores , mesmo que estes valores sejam de tipos diferentes , ja o === compara se os valores são do mesmo valor e tipo.
+Em Javascript temos os operadores == e ===, o operador == e usado para comparar dois valores mesmo que estes valores sejam de tipos diferentes , ja o === compara se os valores são do mesmo valor e tipo (string,number).
 
 ## Use 'let' ao invés de 'var'
 
 \
-o tipo de váriavel 'var' pode ser usada em todo o contexto do bloco, mesmo após o fechamento de um 'for'a variável pode ser mudada o que pode causar bugs, ja o 'let'e usado somente no contexto do bloco, evitando assim erros ou falhas.
+o tipo de variável 'var' pode ser usada em todo o contexto do bloco, mesmo após o fechamento de um 'for'a variável pode ser mudada o que pode causar bugs, ja o 'let'e usado somente no contexto do bloco, evitando assim erros ou falhas.
 
 ## Use variáveis imutáveis como 'const'
 
-ao menos que você tenha uma variável que pode mudar, o uso de const e recomendado.
+ao menos que você tenha uma variável que pode mudar na sua execução, o uso de const e recomendado.
 
 ```
 const x = 1 
@@ -50,11 +50,11 @@ let sum = (a, b) => { // usando arrow function
 let sum= (a,b) => a+ b ; // este método não precisa de return
 ```
 
-Usar Arrow functions evita içamentos em javasript , você pode ver mais sobre isso [aqui.](https://medium.com/devzera/um-guia-para-entender-javascript-hoisting-com-vari%C3%A1veis-usando-let-e-const-45e0a62b16e2)
+Usar Arrow functions evita içamentos em javasript , você pode ver mais sobre içamentos [aqui.](https://medium.com/devzera/um-guia-para-entender-javascript-hoisting-com-vari%C3%A1veis-usando-let-e-const-45e0a62b16e2)
 
 ## Use funções puras
 
-Funções puras não são alteradas mesmo após várias chamadas , isto pode te ajudar a testar a função e principalmente a testar a depura-la. 
+Funções puras não são alteradas mesmo após várias chamadas , isto pode te ajudar a testar a função e principalmente a depura-la. 
 
 Exemplo de uma função impura. 
 
@@ -107,7 +107,7 @@ perceba que mesmo chamando a função 3 vezes os valores não se alteram.
 
 ## Nomeie as coisas corretamente
 
-Nos temos a tendência de ser preguiçosos ,e sofremos depois que temos que dar manutenção no mesmo código
+Nos temos a tendência de ser preguiçosos ,e sofremos depois que temos que dar manutenção no mesmo código.
 
 ```
 // Jeito Errado
@@ -236,7 +236,6 @@ Math.floor(Math.random()*1000)
 // use 
 
 ~~ (Math.random()*1000)
-
 ```
 
 se você quer saber mais sobre isso, [veja este artigo. ](http://rocha.la/JavaScript-bitwise-operators-in-practice)
