@@ -1,7 +1,7 @@
 ---
 title: 10 práticas recomendadas em JavaScript.
 description: As 10 práticas recomendas pelos melhores desenvolvedores de javascript
-date: 2020-11-19T00:10:25.871Z
+date: 2020-11-19T01:32:23.658Z
 image: /assets/img/javascript.png
 category: JS
 background: "#FFD700\t"
