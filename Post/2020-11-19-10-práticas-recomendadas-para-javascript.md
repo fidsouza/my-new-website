@@ -8,11 +8,14 @@ background: "#FFD700\t"
 ---
 ## Não use '==' para operadores.
 
-Em Javascript temos os operadores == e ===, o operador == e usado para comparar dois valores mesmo que estes valores sejam de tipos diferentes, ja o === compara se os valores são do mesmo valor e tipo (string,number).
+Em Javascript temos os operadores == e ===, o operador == e usado 
+para comparar dois valores mesmo 
+que estes valores sejam de tipos diferentes, ja o === compara se os valores são do mesmo valor e tipo (string,number).
 
 ## Use 'let' ao invés de 'var'
 
-o tipo de variável 'var' pode ser usada em todo o contexto do bloco, mesmo após o fechamento de um 'for'a variável pode ser mudada o que pode causar bugs, ja o 'let'e usado somente no contexto do bloco, evitando assim erros ou falhas.
+o tipo de variável 'var' pode ser usada em todo o contexto do bloco, mesmo após o fechamento 
+de um 'for'a variável pode ser mudada o que pode causar bugs, ja o 'let'e usado somente no contexto do bloco, evitando assim erros ou falhas.
 
 ## Use variáveis imutáveis como 'const'
 
