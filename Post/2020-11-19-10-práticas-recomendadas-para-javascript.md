@@ -8,7 +8,7 @@ background: "#FFD700\t"
 ---
 ## Não use '==' para operadores.
 
-Em Javascript temos os operadores == e ===, o operador == e usado para comparar dois valores mesmo que estes valores sejam de tipos diferentes , ja o === compara se os valores são do mesmo valor e tipo (string,number).
+Em Javascript temos os operadores == e ===, o operador == e usado para comparar dois valores mesmo que estes valores sejam de tipos diferentes , ja o === compara se os valores são do mesmo valor e tipo (string,number)
 
 ## Use 'let' ao invés de 'var'
 
