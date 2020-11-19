@@ -8,8 +8,6 @@ background: "#FFD700\t"
 ---
 # As 10 melhores práticas de JavaScript recomendada pelos melhores desenvolvedores.
 
-
-
 ## Não use '==' para operadores.
 
 Em Javascript temos os operadores == e ===, o operador == e usado para comparar dois valores , mesmo que estes valores sejam de tipos diferentes , ja o === compara se os valores são do mesmo valor e tipo.
@@ -54,8 +52,6 @@ let sum = (a, b) => { // usando arrow function
 let sum= (a,b) => a+ b ; // este método não precisa de return
 ```
 
-
-
 Usar Arrow functions evita içamentos em javasript , você pode ver mais sobre isso [aqui.](https://medium.com/devzera/um-guia-para-entender-javascript-hoisting-com-vari%C3%A1veis-usando-let-e-const-45e0a62b16e2)
 
 ## Use funções puras
@@ -77,6 +73,7 @@ const doubleArrayValuesImpure= (array)=>{
     }
 // Executamos a função e mudamos os valores multiplicando por 2 
 // cada valor do array 
+
 // Executando a mesma função várias vezes 
 console.log(doubleArrayValuesImpure(array)) ;
 console.log(doubleArrayValuesImpure(array)) ;
@@ -87,4 +84,127 @@ console.log(doubleArrayValuesImpure(array)) ;
 [ 4, 8, 12, 16, 20 ]
 [ 8, 16, 24, 32, 40 ]
 */
+
+// observe que os valores são alterados após várias execuções
+// isto torna a função impura.
+
+
 ```
+
+Usando uma função pura:
+
+```
+const doubleArrayValuesPure= () => array.map(number => number *2) ; 
+
+console.log("Retornos de uma função pura")
+console.log(doubleArrayValuesPure(array));
+console.log(doubleArrayValuesPure(array));
+console.log(doubleArrayValuesPure(array));
+/*Output:
+[ 2, 4, 6, 8, 10 ]
+[ 2, 4, 6, 8, 10 ]
+[ 2, 4, 6, 8, 10 ]
+*/
+```
+
+perceba que mesmo chamando a função 3 vezes os valores não se alteram. 
+
+## Nomeie as coisas corretamente 
+
+Nos temos a tendência de ser preguiçosos ,e sofremos depois que temos que dar manutenção no mesmo código
+
+```
+// Jeito Errado
+let ad="Rua dos bobos numero 0";
+let c="São Paulo";
+
+// Jeito Correto.
+let adress="Rua dos bobos numero 0";
+let city="São paulo";
+```
+
+## Use Promises 
+
+Existem algumas maneiras de se trabalhar com promises , algumas bem complicadas que vão tornar sua vida um inferno e o seu código uma árvore de natal. 
+
+```
+console.log("before");
+
+getUser(1,(user)=>{
+    console.log("username:",user.github);
+    getRepo(user.github,(repo)=>{
+        console.log("Repositories are " + repo);
+        getCommits(repo[0],(commit)=>{
+            console.log("Commits")
+        })
+    })
+})
+
+
+function getUser(id,callback   ){
+    setTimeout(()=>{
+        console.log("reading user from database")
+    callback({ id:id*2,github:'hrithwikbharadwaj'});
+},2000)
+}
+
+function getRepo(username,callback){
+    setTimeout(()=>{
+        console.log("reading repo from "+username);
+        callback(['repo1','repo2','repo3']);
+    },2000)
+
+}
+function getCommits(repo,callback){
+    setTimeout(()=>{
+        callback(repo);
+    },300);
+}
+
+console.log("After")
+```
+
+aqui um exemplo de um código usando promises . 
+
+```
+console.log("antes")
+
+getUser(1)
+.then(user=> getRepos(user.github)) // o usuário  esta disponível ?
+.then(repos=>getCommits(repos[0])) // ah ok , encontre agora o primeiro repositório
+.then(commits=>console.log("commit name: ",commits)); // encontrou o repositório? então agora me mostre os commits
+
+
+
+function getUser(id){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        console.log("reading user from database")
+    resolve({ id:id*2,github:'hrithwikbharadwaj'});
+},2000);
+    })
+
+}
+
+function getRepos(username){
+     return new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+        console.log("reading repo from "+username);
+        resolve(['repo1','repo2','repo3']);
+    },2000);
+     });
+
+
+}
+function getCommits(repo){
+   return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        resolve(['commits']);
+    },2000);
+   });
+}
+
+console.log("depois")
+```
+
+existem maneiras mais fáceis ainda de usar Promises utilizando por exemplo async/await , isto fica para um próxima.
