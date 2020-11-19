@@ -12,7 +12,6 @@ Em Javascript temos os operadores == e ===, o operador == e usado para comparar 
 
 ## Use 'let' ao invés de 'var'
 
-\
 o tipo de variável 'var' pode ser usada em todo o contexto do bloco, mesmo após o fechamento de um 'for'a variável pode ser mudada o que pode causar bugs, ja o 'let'e usado somente no contexto do bloco, evitando assim erros ou falhas.
 
 ## Use variáveis imutáveis como 'const'
