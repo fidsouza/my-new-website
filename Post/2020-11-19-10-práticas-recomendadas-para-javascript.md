@@ -87,8 +87,6 @@ console.log(doubleArrayValuesImpure(array)) ;
 
 // observe que os valores são alterados após várias execuções
 // isto torna a função impura.
-
-
 ```
 
 Usando uma função pura:
@@ -109,7 +107,7 @@ console.log(doubleArrayValuesPure(array));
 
 perceba que mesmo chamando a função 3 vezes os valores não se alteram. 
 
-## Nomeie as coisas corretamente 
+## Nomeie as coisas corretamente
 
 Nos temos a tendência de ser preguiçosos ,e sofremos depois que temos que dar manutenção no mesmo código
 
@@ -123,7 +121,7 @@ let adress="Rua dos bobos numero 0";
 let city="São paulo";
 ```
 
-## Use Promises 
+## Use Promises
 
 Existem algumas maneiras de se trabalhar com promises , algumas bem complicadas que vão tornar sua vida um inferno e o seu código uma árvore de natal. 
 
@@ -207,4 +205,53 @@ function getCommits(repo){
 console.log("depois")
 ```
 
-existem maneiras mais fáceis ainda de usar Promises utilizando por exemplo async/await , isto fica para um próxima.
+existem maneiras mais fáceis ainda de usar Promises utilizando por exemplo async/await , isto fica para um próxima. 
+
+## Escreva funções para tudo
+
+Normalmente nos criamos funções para muitas coisas, mais por alguns motivos não escrevemos para tudo , o que torna depois um código de difícil manutenção. 
+
+```
+// Código ruim
+let number1=2;
+let number2=5;
+
+let sum= number1+number2;
+
+// Bom
+const sum = (number1,number2) =>{
+    return number1+number2;
+}
+
+console.log(sum(2,3))
+```
+
+## Gerando números aleatórios sem matar o desempenho.
+
+Existem certas situações em que precisamos gerar números aleatórios, e costumamos a usar operações matemáticas para isso.
+
+```
+// ao invés de usar 
+
+Math.floor(Math.random()*1000)
+
+// use 
+
+~~ (Math.random()*1000)
+
+```
+
+se você quer saber mais sobre isso, [veja este artigo. ](http://rocha.la/JavaScript-bitwise-operators-in-practice)
+
+## Excluindo matrizes como um profissional.
+
+Existem várias maneiras, mais com certeza a melhor maneira e a minha favorita e esta. 
+
+```
+let numbers=[1,2,3,4];
+numbers.length=0;
+```
+
+Muitas vezes, entramos na linguagem seja ela qual for sem conhecer suas bases , porém com este artigo acredito que possa contribuir um pouco. 
+
+Diz ai o que você achou e se concorda.
